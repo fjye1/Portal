@@ -1,0 +1,6 @@
+[submodule "projects/kit_website"]
+	path = projects/kit_website
+	url = https://github.com/fjye1/kit_website.git
+[submodule "projects/Samadhi-Therapies"]
+	path = projects/Samadhi-Therapies
+	url = https://github.com/fjye1/Samadhi-Therapies.git
