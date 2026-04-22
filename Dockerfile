@@ -4,9 +4,8 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y git
 
-COPY . .
-
-RUN git submodule update --init --recursive
+# Clone the main repo + all submodules in one shot
+RUN git clone --recurse-submodules https://github.com/fjye1/Portal .
 
 RUN pip install -r requirements.txt
 
