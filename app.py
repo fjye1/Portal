@@ -8,11 +8,6 @@ app = Flask(__name__)
 def index():
     return send_from_directory('projects/portal', 'index.html')
 
-# 2. Event Builder (Matches your HTML link: /event_builder/)
-@app.route('/Event_builder/')
-@app.route('/Event_builder/<path:path>')
-def event_builder(path='run.py'):
-    return send_from_directory('projects/Event_builder', path)
 
 # 3. Kit Website (Matches your HTML link: /kit_website/)
 @app.route('/kit_website/')
