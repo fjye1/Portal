@@ -11,8 +11,7 @@ def index():
 @home_bp.route('/portal')
 @login_required # Add this if you want only logged-in users to see the portal
 def portal():
-    portal_path = os.path.join(current_app.root_path, 'projects', 'portal')
-    return send_from_directory(portal_path, 'index.html')
+    return render_template("projects/index.html")
 
 
 @home_bp.route('/kit_website/')
